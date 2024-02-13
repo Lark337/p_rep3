@@ -1,0 +1,1937 @@
+
+INFO 2024-01-28 18:45:14,466 autoreload 14552 24836 Watching for file changes with StatReloader
+INFO 2024-02-12 18:54:59,513 autoreload 18324 22884 Watching for file changes with StatReloader
+INFO 2024-02-12 18:55:24,424 autoreload 18324 22884 D:\programs\p_rep3\d5\myapp3\urls.py changed, reloading.
+INFO 2024-02-12 18:55:27,339 autoreload 23844 24468 Watching for file changes with StatReloader
+INFO 2024-02-12 18:56:05,658 autoreload 23844 24468 D:\programs\p_rep3\d5\myapp3\views.py changed, reloading.
+INFO 2024-02-12 18:56:08,227 autoreload 14192 24044 Watching for file changes with StatReloader
+INFO 2024-02-12 18:56:15,629 autoreload 25484 23052 Watching for file changes with StatReloader
+INFO 2024-02-12 18:56:18,243 basehttp 25484 22012 "GET / HTTP/1.1" 200 9
+WARNING 2024-02-12 18:56:18,393 log 25484 22012 Not Found: /favicon.ico
+WARNING 2024-02-12 18:56:18,394 basehttp 25484 22012 "GET /favicon.ico HTTP/1.1" 404 2537
+WARNING 2024-02-12 18:56:26,273 log 25484 22012 Not Found: /get_post/0
+WARNING 2024-02-12 18:56:26,274 basehttp 25484 22012 "GET /get_post/0 HTTP/1.1" 404 2534
+WARNING 2024-02-12 18:56:38,727 log 25484 22012 Not Found: /d5/get_post/0
+WARNING 2024-02-12 18:56:38,728 basehttp 25484 22012 "GET /d5/get_post/0 HTTP/1.1" 404 2645
+INFO 2024-02-12 18:56:56,773 basehttp 25484 22012 "GET /d5/get_product/0 HTTP/1.1" 301 0
+WARNING 2024-02-12 18:56:56,784 log 25484 19580 Not Found: /d5/get_product/0/
+WARNING 2024-02-12 18:56:56,785 basehttp 25484 19580 "GET /d5/get_product/0/ HTTP/1.1" 404 2820
+INFO 2024-02-12 18:57:51,447 basehttp 25484 19580 "GET /d5/get_product/1 HTTP/1.1" 301 0
+ERROR 2024-02-12 18:57:51,585 log 25484 21188 Internal Server Error: /d5/get_product/1/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 9, in get_product
+    return render(request,'',{'product': product})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 23, in get_template
+    contents = self.get_contents(origin)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 26, in get_contents
+    return origin.loader.get_contents(origin)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\filesystem.py", line 22, in get_contents
+    with open(origin.name, encoding=self.engine.file_charset) as fp:
+PermissionError: [Errno 13] Permission denied: 'D:\\programs\\p_rep3\\venv\\lib\\site-packages\\django\\contrib\\admin\\templates'
+ERROR 2024-02-12 18:57:51,588 basehttp 25484 21188 "GET /d5/get_product/1/ HTTP/1.1" 500 108700
+ERROR 2024-02-12 18:58:02,061 log 25484 21188 Internal Server Error: /d5/get_product/1/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 9, in get_product
+    return render(request,'',{'product': product})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 23, in get_template
+    contents = self.get_contents(origin)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 26, in get_contents
+    return origin.loader.get_contents(origin)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\filesystem.py", line 22, in get_contents
+    with open(origin.name, encoding=self.engine.file_charset) as fp:
+PermissionError: [Errno 13] Permission denied: 'D:\\programs\\p_rep3\\venv\\lib\\site-packages\\django\\contrib\\admin\\templates'
+ERROR 2024-02-12 18:58:02,063 basehttp 25484 21188 "GET /d5/get_product/1/ HTTP/1.1" 500 108700
+ERROR 2024-02-12 18:58:02,870 log 25484 21188 Internal Server Error: /d5/get_product/1/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 9, in get_product
+    return render(request,'',{'product': product})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 23, in get_template
+    contents = self.get_contents(origin)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 26, in get_contents
+    return origin.loader.get_contents(origin)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\filesystem.py", line 22, in get_contents
+    with open(origin.name, encoding=self.engine.file_charset) as fp:
+PermissionError: [Errno 13] Permission denied: 'D:\\programs\\p_rep3\\venv\\lib\\site-packages\\django\\contrib\\admin\\templates'
+ERROR 2024-02-12 18:58:02,872 basehttp 25484 21188 "GET /d5/get_product/1/ HTTP/1.1" 500 108700
+ERROR 2024-02-12 18:58:03,386 log 25484 21188 Internal Server Error: /d5/get_product/1/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 9, in get_product
+    return render(request,'',{'product': product})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 23, in get_template
+    contents = self.get_contents(origin)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 26, in get_contents
+    return origin.loader.get_contents(origin)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\filesystem.py", line 22, in get_contents
+    with open(origin.name, encoding=self.engine.file_charset) as fp:
+PermissionError: [Errno 13] Permission denied: 'D:\\programs\\p_rep3\\venv\\lib\\site-packages\\django\\contrib\\admin\\templates'
+ERROR 2024-02-12 18:58:03,389 basehttp 25484 21188 "GET /d5/get_product/1/ HTTP/1.1" 500 108700
+INFO 2024-02-12 18:58:20,312 autoreload 23524 2856 Watching for file changes with StatReloader
+ERROR 2024-02-12 18:58:22,901 log 23524 18812 Internal Server Error: /d5/get_product/1/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 9, in get_product
+    return render(request,'',{'product': product})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 23, in get_template
+    contents = self.get_contents(origin)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 26, in get_contents
+    return origin.loader.get_contents(origin)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\filesystem.py", line 22, in get_contents
+    with open(origin.name, encoding=self.engine.file_charset) as fp:
+PermissionError: [Errno 13] Permission denied: 'D:\\programs\\p_rep3\\venv\\lib\\site-packages\\django\\contrib\\admin\\templates'
+ERROR 2024-02-12 18:58:22,904 basehttp 23524 18812 "GET /d5/get_product/1/ HTTP/1.1" 500 108700
+ERROR 2024-02-12 18:58:23,582 log 23524 18812 Internal Server Error: /d5/get_product/1/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 9, in get_product
+    return render(request,'',{'product': product})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 23, in get_template
+    contents = self.get_contents(origin)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 26, in get_contents
+    return origin.loader.get_contents(origin)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\filesystem.py", line 22, in get_contents
+    with open(origin.name, encoding=self.engine.file_charset) as fp:
+PermissionError: [Errno 13] Permission denied: 'D:\\programs\\p_rep3\\venv\\lib\\site-packages\\django\\contrib\\admin\\templates'
+ERROR 2024-02-12 18:58:23,585 basehttp 23524 18812 "GET /d5/get_product/1/ HTTP/1.1" 500 108700
+ERROR 2024-02-12 18:58:24,040 log 23524 18812 Internal Server Error: /d5/get_product/1/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 9, in get_product
+    return render(request,'',{'product': product})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 23, in get_template
+    contents = self.get_contents(origin)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 26, in get_contents
+    return origin.loader.get_contents(origin)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\filesystem.py", line 22, in get_contents
+    with open(origin.name, encoding=self.engine.file_charset) as fp:
+PermissionError: [Errno 13] Permission denied: 'D:\\programs\\p_rep3\\venv\\lib\\site-packages\\django\\contrib\\admin\\templates'
+ERROR 2024-02-12 18:58:24,042 basehttp 23524 18812 "GET /d5/get_product/1/ HTTP/1.1" 500 108700
+INFO 2024-02-12 19:08:30,503 autoreload 19872 25324 Watching for file changes with StatReloader
+INFO 2024-02-12 19:08:32,983 basehttp 19872 14392 "GET / HTTP/1.1" 200 9
+ERROR 2024-02-12 19:08:36,069 log 19872 14392 Internal Server Error: /d5/get_product/1/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 9, in get_product
+    return render(request,'myapp3/get_product.html',{'product': product})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/get_product.html
+ERROR 2024-02-12 19:08:36,071 basehttp 19872 14392 "GET /d5/get_product/1/ HTTP/1.1" 500 78550
+INFO 2024-02-12 19:13:52,042 autoreload 19872 25324 D:\programs\p_rep3\d5\d1\settings.py changed, reloading.
+INFO 2024-02-12 19:13:52,663 autoreload 18556 25264 Watching for file changes with StatReloader
+INFO 2024-02-12 19:13:57,576 autoreload 18556 25264 D:\programs\p_rep3\d5\d1\settings.py changed, reloading.
+INFO 2024-02-12 19:13:58,173 autoreload 24020 13460 Watching for file changes with StatReloader
+INFO 2024-02-12 19:13:59,834 autoreload 24020 13460 D:\programs\p_rep3\d5\d1\settings.py changed, reloading.
+INFO 2024-02-12 19:14:00,513 autoreload 5252 23452 Watching for file changes with StatReloader
+INFO 2024-02-12 19:15:07,895 autoreload 5252 23452 D:\programs\p_rep3\d5\d1\settings.py changed, reloading.
+INFO 2024-02-12 19:15:08,510 autoreload 3616 25048 Watching for file changes with StatReloader
+INFO 2024-02-12 19:15:36,833 basehttp 3616 10636 "GET / HTTP/1.1" 200 9
+ERROR 2024-02-12 19:15:41,492 log 3616 10636 Internal Server Error: /d5/get_product/1/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 9, in get_product
+    return render(request,'myapp3/get_product.html',{'product': product})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/get_product.html
+ERROR 2024-02-12 19:15:41,494 basehttp 3616 10636 "GET /d5/get_product/1/ HTTP/1.1" 500 78550
+WARNING 2024-02-12 19:15:45,277 log 3616 10636 Not Found: /d5/get_product/0/
+WARNING 2024-02-12 19:15:45,278 basehttp 3616 10636 "GET /d5/get_product/0/ HTTP/1.1" 404 2820
+ERROR 2024-02-12 19:15:49,872 log 3616 10636 Internal Server Error: /d5/get_product/1/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 9, in get_product
+    return render(request,'myapp3/get_product.html',{'product': product})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/get_product.html
+ERROR 2024-02-12 19:15:49,874 basehttp 3616 10636 "GET /d5/get_product/1/ HTTP/1.1" 500 78550
+INFO 2024-02-12 19:19:37,457 autoreload 15772 21356 Watching for file changes with StatReloader
+INFO 2024-02-12 19:19:39,167 basehttp 15772 22452 "GET / HTTP/1.1" 200 9
+ERROR 2024-02-12 19:19:43,142 log 15772 22452 Internal Server Error: /d5/get_product/1/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 9, in get_product
+    return render(request,'myapp3/get_product.html',{'product': product})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 124, in get_parent
+    raise TemplateSyntaxError(error_msg)
+django.template.exceptions.TemplateSyntaxError: Invalid template name in 'extends' tag: ''. Got this from the 'base.html' variable.
+ERROR 2024-02-12 19:19:43,145 basehttp 15772 22452 "GET /d5/get_product/1/ HTTP/1.1" 500 107734
+INFO 2024-02-12 19:20:37,209 autoreload 22644 11736 Watching for file changes with StatReloader
+INFO 2024-02-12 19:20:39,495 basehttp 22644 15204 "GET / HTTP/1.1" 200 9
+INFO 2024-02-12 19:20:42,059 basehttp 22644 15204 "GET /d5/get_product/1/ HTTP/1.1" 200 149
+INFO 2024-02-12 19:20:55,387 basehttp 22644 15204 "GET /d5/get_product/1/ HTTP/1.1" 200 233
+INFO 2024-02-12 19:25:11,170 autoreload 22644 11736 D:\programs\p_rep3\d5\myapp3\urls.py changed, reloading.
+INFO 2024-02-12 19:25:11,742 autoreload 20216 24876 Watching for file changes with StatReloader
+INFO 2024-02-12 19:25:40,592 autoreload 20216 24876 D:\programs\p_rep3\d5\myapp3\urls.py changed, reloading.
+INFO 2024-02-12 19:25:41,166 autoreload 8828 12144 Watching for file changes with StatReloader
+INFO 2024-02-12 19:25:43,358 basehttp 8828 2416 "GET / HTTP/1.1" 200 9
+INFO 2024-02-12 19:26:18,913 basehttp 8828 2416 "GET /d5/get_products HTTP/1.1" 301 0
+INFO 2024-02-12 19:26:18,925 basehttp 8828 23356 "GET /d5/get_products/ HTTP/1.1" 200 389
+ERROR 2024-02-12 19:31:03,043 log 8828 10420 Internal Server Error: /d5/get_products/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 13, in get_products
+    return render(request,'myapp3/get_products.html', {'products': products})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% for product in products %' from '% for product in products %'
+ERROR 2024-02-12 19:31:03,046 basehttp 8828 10420 "GET /d5/get_products/ HTTP/1.1" 500 163515
+ERROR 2024-02-12 19:36:28,604 log 8828 20128 Internal Server Error: /d5/get_products/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 13, in get_products
+    return render(request,'myapp3/get_products.html', {'products': products})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% for product in products %' from '% for product in products %'
+ERROR 2024-02-12 19:36:28,607 basehttp 8828 20128 "GET /d5/get_products/ HTTP/1.1" 500 163783
+ERROR 2024-02-12 19:36:29,495 log 8828 20128 Internal Server Error: /d5/get_products/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 13, in get_products
+    return render(request,'myapp3/get_products.html', {'products': products})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% for product in products %' from '% for product in products %'
+ERROR 2024-02-12 19:36:29,498 basehttp 8828 20128 "GET /d5/get_products/ HTTP/1.1" 500 163783
+ERROR 2024-02-12 19:36:30,212 log 8828 20128 Internal Server Error: /d5/get_products/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 13, in get_products
+    return render(request,'myapp3/get_products.html', {'products': products})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% for product in products %' from '% for product in products %'
+ERROR 2024-02-12 19:36:30,215 basehttp 8828 20128 "GET /d5/get_products/ HTTP/1.1" 500 163783
+ERROR 2024-02-12 19:36:30,779 log 8828 20128 Internal Server Error: /d5/get_products/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 13, in get_products
+    return render(request,'myapp3/get_products.html', {'products': products})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% for product in products %' from '% for product in products %'
+ERROR 2024-02-12 19:36:30,781 basehttp 8828 20128 "GET /d5/get_products/ HTTP/1.1" 500 163783
+ERROR 2024-02-12 19:36:31,384 log 8828 20128 Internal Server Error: /d5/get_products/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 13, in get_products
+    return render(request,'myapp3/get_products.html', {'products': products})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% for product in products %' from '% for product in products %'
+ERROR 2024-02-12 19:36:31,386 basehttp 8828 20128 "GET /d5/get_products/ HTTP/1.1" 500 163783
+ERROR 2024-02-12 19:39:11,695 log 8828 2496 Internal Server Error: /d5/get_products/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 13, in get_products
+    return render(request,'myapp3/get_products.html', {'products': products})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% for product in products %' from '% for product in products %'
+ERROR 2024-02-12 19:39:11,698 basehttp 8828 2496 "GET /d5/get_products/ HTTP/1.1" 500 165182
+ERROR 2024-02-12 19:39:12,530 log 8828 2496 Internal Server Error: /d5/get_products/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 13, in get_products
+    return render(request,'myapp3/get_products.html', {'products': products})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% for product in products %' from '% for product in products %'
+ERROR 2024-02-12 19:39:12,533 basehttp 8828 2496 "GET /d5/get_products/ HTTP/1.1" 500 165182
+ERROR 2024-02-12 19:39:13,253 log 8828 2496 Internal Server Error: /d5/get_products/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 13, in get_products
+    return render(request,'myapp3/get_products.html', {'products': products})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% for product in products %' from '% for product in products %'
+ERROR 2024-02-12 19:39:13,256 basehttp 8828 2496 "GET /d5/get_products/ HTTP/1.1" 500 165182
+ERROR 2024-02-12 19:39:13,678 log 8828 2496 Internal Server Error: /d5/get_products/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 13, in get_products
+    return render(request,'myapp3/get_products.html', {'products': products})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% for product in products %' from '% for product in products %'
+ERROR 2024-02-12 19:39:13,680 basehttp 8828 2496 "GET /d5/get_products/ HTTP/1.1" 500 165182
+ERROR 2024-02-12 19:39:14,069 log 8828 2496 Internal Server Error: /d5/get_products/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 13, in get_products
+    return render(request,'myapp3/get_products.html', {'products': products})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% for product in products %' from '% for product in products %'
+ERROR 2024-02-12 19:39:14,072 basehttp 8828 2496 "GET /d5/get_products/ HTTP/1.1" 500 165182
+ERROR 2024-02-12 19:39:14,506 log 8828 2496 Internal Server Error: /d5/get_products/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 13, in get_products
+    return render(request,'myapp3/get_products.html', {'products': products})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% for product in products %' from '% for product in products %'
+ERROR 2024-02-12 19:39:14,509 basehttp 8828 2496 "GET /d5/get_products/ HTTP/1.1" 500 165182
+ERROR 2024-02-12 19:39:15,134 log 8828 2496 Internal Server Error: /d5/get_products/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 13, in get_products
+    return render(request,'myapp3/get_products.html', {'products': products})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% for product in products %' from '% for product in products %'
+ERROR 2024-02-12 19:39:15,137 basehttp 8828 2496 "GET /d5/get_products/ HTTP/1.1" 500 165182
+INFO 2024-02-12 19:39:49,149 autoreload 8828 12144 D:\programs\p_rep3\d5\myapp3\views.py changed, reloading.
+INFO 2024-02-12 19:39:49,764 autoreload 21160 18800 Watching for file changes with StatReloader
+INFO 2024-02-12 19:39:51,607 basehttp 21160 24124 "GET / HTTP/1.1" 200 9
+ERROR 2024-02-12 19:39:53,867 log 21160 24124 Internal Server Error: /d5/get_products/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 14, in get_products
+    return render(request,'myapp3/get_products.html', {'products': products})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% for product in products %' from '% for product in products %'
+ERROR 2024-02-12 19:39:53,871 basehttp 21160 24124 "GET /d5/get_products/ HTTP/1.1" 500 165201
+INFO 2024-02-12 19:40:29,150 autoreload 21160 18800 D:\programs\p_rep3\d5\myapp3\views.py changed, reloading.
+INFO 2024-02-12 19:40:29,754 autoreload 24776 17772 Watching for file changes with StatReloader
+ERROR 2024-02-12 19:40:30,721 log 24776 21524 Internal Server Error: /d5/get_products/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 13, in get_products
+    return render(request,'myapp3/get_products.html', {'products': products})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% products %' from '% products %'
+ERROR 2024-02-12 19:40:30,725 basehttp 24776 21524 "GET /d5/get_products/ HTTP/1.1" 500 160669
+ERROR 2024-02-12 19:40:31,743 log 24776 21524 Internal Server Error: /d5/get_products/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 13, in get_products
+    return render(request,'myapp3/get_products.html', {'products': products})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% products %' from '% products %'
+ERROR 2024-02-12 19:40:31,745 basehttp 24776 21524 "GET /d5/get_products/ HTTP/1.1" 500 160669
+INFO 2024-02-12 19:41:41,727 basehttp 24776 21524 "GET /d5/get_products/ HTTP/1.1" 200 389
+ERROR 2024-02-12 19:43:52,506 log 24776 17780 Internal Server Error: /d5/get_products/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 13, in get_products
+    return render(request,'myapp3/get_products.html', {'products': products})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% for product in products %' from '% for product in products %'
+ERROR 2024-02-12 19:43:52,509 basehttp 24776 17780 "GET /d5/get_products/ HTTP/1.1" 500 165182
+ERROR 2024-02-12 19:47:58,584 log 24776 20452 Internal Server Error: /d5/get_products/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 13, in get_products
+    return render(request,'myapp3/get_products.html', {'products': products})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\defaulttags.py", line 860, in do_for
+    nodelist_loop = parser.parse(
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% product.name %' from '% product.name %'
+ERROR 2024-02-12 19:47:58,587 basehttp 24776 20452 "GET /d5/get_products/ HTTP/1.1" 500 179088
+ERROR 2024-02-12 19:47:59,600 log 24776 20452 Internal Server Error: /d5/get_products/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 13, in get_products
+    return render(request,'myapp3/get_products.html', {'products': products})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\defaulttags.py", line 860, in do_for
+    nodelist_loop = parser.parse(
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% product.name %' from '% product.name %'
+ERROR 2024-02-12 19:47:59,604 basehttp 24776 20452 "GET /d5/get_products/ HTTP/1.1" 500 179088
+ERROR 2024-02-12 19:48:00,300 log 24776 20452 Internal Server Error: /d5/get_products/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 13, in get_products
+    return render(request,'myapp3/get_products.html', {'products': products})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\defaulttags.py", line 860, in do_for
+    nodelist_loop = parser.parse(
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% product.name %' from '% product.name %'
+ERROR 2024-02-12 19:48:00,303 basehttp 24776 20452 "GET /d5/get_products/ HTTP/1.1" 500 179088
+ERROR 2024-02-12 19:48:00,782 log 24776 20452 Internal Server Error: /d5/get_products/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 13, in get_products
+    return render(request,'myapp3/get_products.html', {'products': products})
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\defaulttags.py", line 860, in do_for
+    nodelist_loop = parser.parse(
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 698, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '% product.name %' from '% product.name %'
+ERROR 2024-02-12 19:48:00,784 basehttp 24776 20452 "GET /d5/get_products/ HTTP/1.1" 500 179088
+INFO 2024-02-12 19:48:11,615 basehttp 24776 20452 "GET /d5/get_products/ HTTP/1.1" 200 339
+INFO 2024-02-12 19:48:29,958 basehttp 24776 20452 "GET /d5/get_products/ HTTP/1.1" 200 321
+INFO 2024-02-12 19:48:38,717 basehttp 24776 20452 "GET /d5/get_products/ HTTP/1.1" 200 503
+INFO 2024-02-13 17:39:17,311 autoreload 7536 4736 Watching for file changes with StatReloader
+INFO 2024-02-13 17:40:14,117 autoreload 7536 4736 D:\programs\p_rep3\d5\myapp3\forms.py changed, reloading.
+INFO 2024-02-13 17:40:14,707 autoreload 23476 23620 Watching for file changes with StatReloader
+INFO 2024-02-13 17:40:17,879 basehttp 23476 26316 "GET / HTTP/1.1" 200 9
+WARNING 2024-02-13 17:40:18,029 log 23476 26316 Not Found: /favicon.ico
+INFO 2024-02-13 17:40:18,029 basehttp 23476 26316 - Broken pipe from ('127.0.0.1', 50645)
+WARNING 2024-02-13 17:40:30,731 log 23476 26860 Not Found: /d5/add_product
+WARNING 2024-02-13 17:40:30,731 basehttp 23476 26860 "GET /d5/add_product HTTP/1.1" 404 2832
+INFO 2024-02-13 17:41:28,813 autoreload 23476 23620 D:\programs\p_rep3\d5\myapp3\urls.py changed, reloading.
+INFO 2024-02-13 17:41:29,403 autoreload 7032 15988 Watching for file changes with StatReloader
+INFO 2024-02-13 17:41:47,682 autoreload 7032 15988 D:\programs\p_rep3\d5\myapp3\urls.py changed, reloading.
+INFO 2024-02-13 17:41:48,249 autoreload 17612 11208 Watching for file changes with StatReloader
+INFO 2024-02-13 17:41:51,046 basehttp 17612 26312 "GET /d5/add_product HTTP/1.1" 301 0
+INFO 2024-02-13 17:41:51,117 basehttp 17612 17360 "GET /d5/add_product/ HTTP/1.1" 200 887
+INFO 2024-02-13 17:45:03,376 basehttp 17612 16180 "GET /d5/add_product/ HTTP/1.1" 200 887
+INFO 2024-02-13 17:45:04,098 basehttp 17612 16180 "GET /d5/add_product/ HTTP/1.1" 200 887
+INFO 2024-02-13 17:45:04,505 basehttp 17612 16180 "GET /d5/add_product/ HTTP/1.1" 200 887
+INFO 2024-02-13 17:45:04,746 basehttp 17612 16180 "GET /d5/add_product/ HTTP/1.1" 200 887
+INFO 2024-02-13 17:45:04,957 basehttp 17612 16180 "GET /d5/add_product/ HTTP/1.1" 200 887
+INFO 2024-02-13 17:45:05,152 basehttp 17612 16180 "GET /d5/add_product/ HTTP/1.1" 200 887
+INFO 2024-02-13 17:45:05,355 basehttp 17612 16180 "GET /d5/add_product/ HTTP/1.1" 200 887
+INFO 2024-02-13 17:45:05,572 basehttp 17612 16180 "GET /d5/add_product/ HTTP/1.1" 200 887
+INFO 2024-02-13 17:46:23,344 basehttp 17612 16180 "GET /d5/add_product/ HTTP/1.1" 200 887
+INFO 2024-02-13 17:46:34,925 basehttp 17612 16180 "GET /d5/add_product/ HTTP/1.1" 200 887
+INFO 2024-02-13 17:46:42,389 basehttp 17612 16180 "GET /d5/add_product/ HTTP/1.1" 200 887
+INFO 2024-02-13 17:47:52,085 autoreload 17612 11208 D:\programs\p_rep3\d5\myapp3\views.py changed, reloading.
+INFO 2024-02-13 17:47:52,648 autoreload 1420 13000 Watching for file changes with StatReloader
+INFO 2024-02-13 17:47:58,476 basehttp 1420 23188 "GET / HTTP/1.1" 200 9
+INFO 2024-02-13 17:48:00,379 basehttp 1420 23188 "GET /d5/add_product/ HTTP/1.1" 200 887
+INFO 2024-02-13 17:51:14,408 autoreload 1420 13000 D:\programs\p_rep3\d5\myapp3\views.py changed, reloading.
+INFO 2024-02-13 17:51:14,973 autoreload 16192 25872 Watching for file changes with StatReloader
+INFO 2024-02-13 17:51:37,293 basehttp 16192 20960 "GET / HTTP/1.1" 200 9
+INFO 2024-02-13 17:51:40,027 basehttp 16192 20960 "GET /d5/add_product/ HTTP/1.1" 200 887
+INFO 2024-02-13 17:51:40,730 basehttp 16192 20960 "GET /d5/add_product/ HTTP/1.1" 200 887
+INFO 2024-02-13 17:51:41,230 basehttp 16192 20960 "GET /d5/add_product/ HTTP/1.1" 200 887
+INFO 2024-02-13 17:51:41,609 basehttp 16192 20960 "GET /d5/add_product/ HTTP/1.1" 200 887
+INFO 2024-02-13 17:51:41,915 basehttp 16192 20960 "GET /d5/add_product/ HTTP/1.1" 200 887
+INFO 2024-02-13 17:51:42,243 basehttp 16192 20960 "GET /d5/add_product/ HTTP/1.1" 200 887
+INFO 2024-02-13 17:51:42,563 basehttp 16192 20960 "GET /d5/add_product/ HTTP/1.1" 200 887
+INFO 2024-02-13 17:51:52,218 basehttp 16192 20960 "GET /d5/add_product/ HTTP/1.1" 200 887
+INFO 2024-02-13 17:51:52,864 basehttp 16192 20960 "GET /d5/add_product/ HTTP/1.1" 200 887
+INFO 2024-02-13 17:52:13,745 basehttp 16192 20960 "GET /d5/add_product/ HTTP/1.1" 200 905
+INFO 2024-02-13 17:54:51,842 basehttp 16192 23412 "GET /d5/add_product/ HTTP/1.1" 200 943
+INFO 2024-02-13 17:55:10,036 basehttp 16192 23412 "POST /d5/add_product/ HTTP/1.1" 200 1020
+INFO 2024-02-13 17:55:40,863 basehttp 16192 23412 "GET / HTTP/1.1" 200 9
+INFO 2024-02-13 17:55:50,145 basehttp 16192 23412 "GET /d5/get_products/ HTTP/1.1" 200 679
+INFO 2024-02-13 17:56:17,546 basehttp 16192 23412 "GET /d5/get_products/ HTTP/1.1" 200 679
+INFO 2024-02-13 17:56:18,171 basehttp 16192 23412 "GET /d5/get_products/ HTTP/1.1" 200 679
+INFO 2024-02-13 17:56:18,682 basehttp 16192 23412 "GET /d5/get_products/ HTTP/1.1" 200 679
+INFO 2024-02-13 17:56:19,149 basehttp 16192 23412 "GET /d5/get_products/ HTTP/1.1" 200 679
+INFO 2024-02-13 17:56:19,513 basehttp 16192 23412 "GET /d5/get_products/ HTTP/1.1" 200 679
+INFO 2024-02-13 17:57:02,804 autoreload 12580 13664 Watching for file changes with StatReloader
+INFO 2024-02-13 17:57:04,780 basehttp 12580 9792 "GET /d5/get_products/ HTTP/1.1" 200 679
+INFO 2024-02-13 17:57:05,395 basehttp 12580 9792 "GET /d5/get_products/ HTTP/1.1" 200 679
+INFO 2024-02-13 17:57:05,821 basehttp 12580 9792 "GET /d5/get_products/ HTTP/1.1" 200 679
+INFO 2024-02-13 17:57:06,197 basehttp 12580 9792 "GET /d5/get_products/ HTTP/1.1" 200 679
+INFO 2024-02-13 17:57:09,229 basehttp 12580 9792 "GET /d5/get_products/ HTTP/1.1" 200 679
+INFO 2024-02-13 17:58:22,282 basehttp 12580 9792 "GET /d5/get_products/ HTTP/1.1" 200 679
+INFO 2024-02-13 17:58:28,091 basehttp 12580 9792 "GET /d5/get_product/4 HTTP/1.1" 301 0
+INFO 2024-02-13 17:58:28,101 basehttp 12580 24292 "GET /d5/get_product/4/ HTTP/1.1" 200 258
+INFO 2024-02-13 17:58:32,677 basehttp 12580 24292 "GET /d5/get_product/5 HTTP/1.1" 301 0
+WARNING 2024-02-13 17:58:32,688 log 12580 25964 Not Found: /d5/get_product/5/
+WARNING 2024-02-13 17:58:32,689 basehttp 12580 25964 "GET /d5/get_product/5/ HTTP/1.1" 404 2820
+INFO 2024-02-13 18:35:02,916 autoreload 22904 20284 Watching for file changes with StatReloader
+INFO 2024-02-13 18:35:41,301 autoreload 22904 20284 D:\programs\p_rep3\d5\myapp3\urls.py changed, reloading.
+INFO 2024-02-13 18:35:41,927 autoreload 24228 26552 Watching for file changes with StatReloader
+ERROR 2024-02-13 18:35:53,023 log 24228 11868 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 35, in index
+    return render(request,'myapp3/base.html)')
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/base.html)
+ERROR 2024-02-13 18:35:53,025 basehttp 24228 11868 "GET / HTTP/1.1" 500 78532
+WARNING 2024-02-13 18:35:53,065 log 24228 11868 Not Found: /favicon.ico
+INFO 2024-02-13 18:35:53,066 basehttp 24228 11868 - Broken pipe from ('127.0.0.1', 54341)
+ERROR 2024-02-13 18:37:14,186 log 24228 26256 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 35, in index
+    return render(request,'myapp3/base.html)')
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/base.html)
+ERROR 2024-02-13 18:37:14,187 basehttp 24228 26256 "GET / HTTP/1.1" 500 78532
+ERROR 2024-02-13 18:37:14,920 log 24228 26256 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 35, in index
+    return render(request,'myapp3/base.html)')
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/base.html)
+ERROR 2024-02-13 18:37:14,921 basehttp 24228 26256 "GET / HTTP/1.1" 500 78532
+ERROR 2024-02-13 18:37:15,479 log 24228 26256 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 35, in index
+    return render(request,'myapp3/base.html)')
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/base.html)
+ERROR 2024-02-13 18:37:15,480 basehttp 24228 26256 "GET / HTTP/1.1" 500 78532
+ERROR 2024-02-13 18:37:15,972 log 24228 26256 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 35, in index
+    return render(request,'myapp3/base.html)')
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/base.html)
+ERROR 2024-02-13 18:37:15,974 basehttp 24228 26256 "GET / HTTP/1.1" 500 78532
+ERROR 2024-02-13 18:37:16,372 log 24228 26256 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 35, in index
+    return render(request,'myapp3/base.html)')
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/base.html)
+ERROR 2024-02-13 18:37:16,374 basehttp 24228 26256 "GET / HTTP/1.1" 500 78532
+ERROR 2024-02-13 18:37:16,785 log 24228 26256 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 35, in index
+    return render(request,'myapp3/base.html)')
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/base.html)
+ERROR 2024-02-13 18:37:16,786 basehttp 24228 26256 "GET / HTTP/1.1" 500 78532
+ERROR 2024-02-13 18:37:17,160 log 24228 26256 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 35, in index
+    return render(request,'myapp3/base.html)')
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/base.html)
+ERROR 2024-02-13 18:37:17,162 basehttp 24228 26256 "GET / HTTP/1.1" 500 78532
+ERROR 2024-02-13 18:37:17,528 log 24228 26256 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 35, in index
+    return render(request,'myapp3/base.html)')
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/base.html)
+ERROR 2024-02-13 18:37:17,530 basehttp 24228 26256 "GET / HTTP/1.1" 500 78532
+ERROR 2024-02-13 18:37:18,069 log 24228 26256 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 35, in index
+    return render(request,'myapp3/base.html)')
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/base.html)
+ERROR 2024-02-13 18:37:18,071 basehttp 24228 26256 "GET / HTTP/1.1" 500 78532
+ERROR 2024-02-13 18:37:18,396 log 24228 26256 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 35, in index
+    return render(request,'myapp3/base.html)')
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/base.html)
+ERROR 2024-02-13 18:37:18,397 basehttp 24228 26256 "GET / HTTP/1.1" 500 78532
+ERROR 2024-02-13 18:37:18,724 log 24228 26256 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 35, in index
+    return render(request,'myapp3/base.html)')
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/base.html)
+ERROR 2024-02-13 18:37:18,726 basehttp 24228 26256 "GET / HTTP/1.1" 500 78532
+ERROR 2024-02-13 18:37:19,134 log 24228 26256 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 35, in index
+    return render(request,'myapp3/base.html)')
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/base.html)
+ERROR 2024-02-13 18:37:19,136 basehttp 24228 26256 "GET / HTTP/1.1" 500 78532
+INFO 2024-02-13 18:40:32,719 autoreload 4004 22028 Watching for file changes with StatReloader
+ERROR 2024-02-13 18:40:34,800 log 4004 25976 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 35, in index
+    return render(request,'myapp3/base.html)')
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/base.html)
+ERROR 2024-02-13 18:40:34,802 basehttp 4004 25976 "GET / HTTP/1.1" 500 78532
+INFO 2024-02-13 18:41:03,686 autoreload 26296 6668 Watching for file changes with StatReloader
+ERROR 2024-02-13 18:41:05,688 log 26296 15028 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 35, in index
+    return render(request,'myapp3/index.html)')
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/index.html)
+ERROR 2024-02-13 18:41:05,690 basehttp 26296 15028 "GET / HTTP/1.1" 500 78548
+ERROR 2024-02-13 18:41:07,224 log 26296 15028 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 35, in index
+    return render(request,'myapp3/index.html)')
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/index.html)
+ERROR 2024-02-13 18:41:07,225 basehttp 26296 15028 "GET / HTTP/1.1" 500 78548
+ERROR 2024-02-13 18:41:07,827 log 26296 15028 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 35, in index
+    return render(request,'myapp3/index.html)')
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/index.html)
+ERROR 2024-02-13 18:41:07,829 basehttp 26296 15028 "GET / HTTP/1.1" 500 78548
+ERROR 2024-02-13 18:41:08,250 log 26296 15028 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 35, in index
+    return render(request,'myapp3/index.html)')
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/index.html)
+ERROR 2024-02-13 18:41:08,252 basehttp 26296 15028 "GET / HTTP/1.1" 500 78548
+ERROR 2024-02-13 18:41:08,550 log 26296 15028 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 35, in index
+    return render(request,'myapp3/index.html)')
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/index.html)
+ERROR 2024-02-13 18:41:08,552 basehttp 26296 15028 "GET / HTTP/1.1" 500 78548
+ERROR 2024-02-13 18:41:08,750 log 26296 15028 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 35, in index
+    return render(request,'myapp3/index.html)')
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/index.html)
+ERROR 2024-02-13 18:41:08,752 basehttp 26296 15028 "GET / HTTP/1.1" 500 78548
+INFO 2024-02-13 18:42:44,317 autoreload 11252 14324 Watching for file changes with StatReloader
+ERROR 2024-02-13 18:42:47,364 log 11252 19580 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 35, in index
+    return render(request,'myapp3/index.html)')
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/index.html)
+ERROR 2024-02-13 18:42:47,366 basehttp 11252 19580 "GET / HTTP/1.1" 500 78548
+ERROR 2024-02-13 18:42:50,060 log 11252 19580 Internal Server Error: /d5/
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 35, in index
+    return render(request,'myapp3/index.html)')
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/index.html)
+ERROR 2024-02-13 18:42:50,062 basehttp 11252 19580 "GET /d5/ HTTP/1.1" 500 78584
+ERROR 2024-02-13 18:42:59,074 log 11252 19580 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 35, in index
+    return render(request,'myapp3/index.html)')
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: myapp3/index.html)
+ERROR 2024-02-13 18:42:59,076 basehttp 11252 19580 "GET / HTTP/1.1" 500 78548
+INFO 2024-02-13 18:43:11,710 autoreload 11252 14324 D:\programs\p_rep3\d5\myapp3\views.py changed, reloading.
+INFO 2024-02-13 18:43:12,322 autoreload 13420 25812 Watching for file changes with StatReloader
+ERROR 2024-02-13 18:43:14,096 log 13420 25780 Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\programs\p_rep3\d5\myapp3\views.py", line 35, in index
+    return render(request,'myapp3/index.html')
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\programs\p_rep3\venv\lib\site-packages\django\template\loader_tags.py", line 228, in do_block
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'block' tag with name 'content' appears more than once
+ERROR 2024-02-13 18:43:14,100 basehttp 13420 25780 "GET / HTTP/1.1" 500 157731
+INFO 2024-02-13 18:44:01,408 basehttp 13420 25780 "GET / HTTP/1.1" 200 242
+INFO 2024-02-13 18:44:03,054 basehttp 13420 25780 "GET / HTTP/1.1" 200 242
+INFO 2024-02-13 18:44:24,063 basehttp 13420 25780 "GET / HTTP/1.1" 200 257
+INFO 2024-02-13 18:44:28,714 basehttp 13420 25780 "GET / HTTP/1.1" 200 252
+INFO 2024-02-13 18:44:29,366 basehttp 13420 25780 "GET / HTTP/1.1" 200 252
+INFO 2024-02-13 18:44:29,679 basehttp 13420 25780 "GET / HTTP/1.1" 200 252
+INFO 2024-02-13 18:44:32,472 basehttp 13420 25780 "GET / HTTP/1.1" 200 252
+INFO 2024-02-13 18:44:33,757 basehttp 13420 25780 "GET /get_products/ HTTP/1.1" 200 679
+INFO 2024-02-13 18:44:35,315 basehttp 13420 25780 "GET /add_product/ HTTP/1.1" 200 943
+INFO 2024-02-13 20:02:32,790 autoreload 27548 26020 Watching for file changes with StatReloader
+INFO 2024-02-13 20:02:35,220 basehttp 27548 17324 "GET / HTTP/1.1" 200 252
+WARNING 2024-02-13 20:02:35,269 log 27548 17324 Not Found: /favicon.ico
+INFO 2024-02-13 20:02:35,269 basehttp 27548 17324 - Broken pipe from ('127.0.0.1', 56446)
+INFO 2024-02-13 20:03:36,239 basehttp 27548 8420 "GET / HTTP/1.1" 200 252
+INFO 2024-02-13 20:04:33,486 autoreload 27548 26020 D:\programs\p_rep3\d5\d1\settings.py changed, reloading.
+INFO 2024-02-13 20:04:34,152 autoreload 22820 24796 Watching for file changes with StatReloader
+INFO 2024-02-13 20:05:23,899 basehttp 22820 11588 "GET / HTTP/1.1" 200 252
+INFO 2024-02-13 20:05:24,390 basehttp 22820 11588 "GET / HTTP/1.1" 200 252
+INFO 2024-02-13 20:06:35,872 autoreload 22820 24796 D:\programs\p_rep3\d5\d1\settings.py changed, reloading.
+INFO 2024-02-13 20:06:36,515 autoreload 24760 17068 Watching for file changes with StatReloader
+INFO 2024-02-13 20:06:43,321 basehttp 24760 10060 "GET / HTTP/1.1" 200 9248
+INFO 2024-02-13 20:06:43,341 basehttp 24760 10060 "GET /static/debug_toolbar/css/toolbar.css HTTP/1.1" 200 12621
+INFO 2024-02-13 20:06:43,341 basehttp 24760 20584 "GET /static/debug_toolbar/js/toolbar.js HTTP/1.1" 200 13578
+INFO 2024-02-13 20:06:43,350 basehttp 24760 20584 "GET /static/debug_toolbar/css/print.css HTTP/1.1" 200 43
+INFO 2024-02-13 20:06:43,350 basehttp 24760 10060 "GET /static/debug_toolbar/js/utils.js HTTP/1.1" 200 4527
+INFO 2024-02-13 20:06:59,315 basehttp 24760 20584 "GET /get_products/ HTTP/1.1" 200 9699
+INFO 2024-02-13 20:07:02,658 basehttp 24760 20584 "GET /add_product/ HTTP/1.1" 200 9965
+INFO 2024-02-13 20:07:14,634 basehttp 24760 20584 "GET /__debug__/render_panel/?store_id=4fc08aba529841b8a1e066e50b1c6bba&panel_id=HistoryPanel HTTP/1.1" 200 5401
+INFO 2024-02-13 20:07:14,643 basehttp 24760 20584 "GET /static/debug_toolbar/js/history.js HTTP/1.1" 200 3515
+INFO 2024-02-13 20:14:17,476 basehttp 24760 19488 "GET /__debug__/render_panel/?store_id=4fc08aba529841b8a1e066e50b1c6bba&panel_id=SQLPanel HTTP/1.1" 200 115
+INFO 2024-02-13 20:44:30,767 autoreload 24760 17068 D:\programs\p_rep3\d5\d1\settings.py changed, reloading.
